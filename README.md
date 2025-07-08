@@ -1,5 +1,5 @@
 **#Solutions of HDLBits Problems - Verilog Practice**
-HDLBits is a great plaform for verilog practice  consiste of all types of circuts from basics to fsm .
+HDLBits is a great platform for verilog practice  consist of all types of circuts from basics to fsm .
 
 ( Main Page : https://hdlbits.01xz.net/wiki/Main_Page )
 
