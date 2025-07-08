@@ -20,11 +20,9 @@ module top_module(
         end
         else begin
             state<=next_state;
-            
-        end
+            end
            
-        
-    end
+     end
 
     // Output logic
     assign out = (state == B);
