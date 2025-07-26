@@ -11,7 +11,7 @@ module top_module (
             q<=q+1;
          end
            else begin
-             q<=q+1;
+             q<=0;
            end
     end
 
