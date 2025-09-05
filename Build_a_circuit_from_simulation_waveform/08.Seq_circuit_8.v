@@ -3,7 +3,7 @@ module top_module (
     input a,
     output p,
     output q );
-    always @ (* ) begin 
+    always @ ( * ) begin 
         if( clock ) begin
         p = a ; 
         end
