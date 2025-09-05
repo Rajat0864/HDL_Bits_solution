@@ -20,5 +20,5 @@ module top_module (
             default : next_state = A ;
         endcase
     end
-    assign z = state[0] ;
+    assign z = state==B ;
 endmodule
