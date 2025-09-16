@@ -22,7 +22,7 @@ module top_module(
         case(state)
             START:       next_state = (in) ? START : DATA;
             DATA:        next_state = (count < 4'd7) ? DATA : PARITY;
-            PARITY:      next_state = (^({out_byte, in})) ? STOP_CHECK : WAIT; // Even parity
+            PARITY:      next_state = ((^out_byte) ^ in)  ? STOP_CHECK : WAIT; // XOR parity only detects an odd number of bit errors (1, 3, 5…), not even.
             STOP_CHECK:  next_state = (in) ? STOP : WAIT;
             STOP:        next_state = (in) ? START : DATA;
             WAIT:        next_state = (in) ? START : WAIT;
